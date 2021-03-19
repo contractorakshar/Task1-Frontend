@@ -1,0 +1,31 @@
+.Timer {
+  background-color: black;
+  color: whitesmoke;
+  font-size: x-large;
+  font-weight: bolder;
+  height: 45px;
+  text-align: center;
+  width: 200px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 25%;
+}

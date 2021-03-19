@@ -1,0 +1,20 @@
+<div style="width: 600px;height: 400px;border: 2px solid gainsboro;">
+  <div
+    style="width: 100%;background-color: lightblue;height: 50px;font-weight: bold;color:mediumslateblue;border: 2px solid gainsboro;">
+    {{Subscription}} Subscription - Submitted: {{Submitted}} - Last Update: {{Last_Update}}
+  </div>
+  <div style="margin-bottom: 20px;">
+    <label>{{Consult_Type}} - {{Name}} - {{gender}}- {{Age}}y.o.</label><br>
+    <label>DOB</label> {{DOB}} <label style="margin-left: 90px;">Email:</label>{{Email}}<br>
+    <label>Skin Type:</label> {{Skin_Type}}<br>
+    <label> Concerns:</label> {{Secondary_Concern}}<br>
+    <label> Patient Reports: </label>{{Patient_Report}}<br>
+    <label>Previous skin Treatments:</label> {{Previous}}<br>
+    <label>Medical Condition: </label>{{Medical_Condition}}<br>
+    <label>Current Medicine:</label> {{Current_Medicines}}<br>
+    <label>Previous Reaction to medicine:</label> {{Previous}}<br>
+    <label>Allergies:</label> {{Allergies}}
+  </div>
+  <button class="btn btn-danger" (click)="onCancelClick()">Close</button>
+  <button class="btn btn-info" (click)="onEscalate()" style="margin-left: 55px;">Escalate</button>
+</div>
