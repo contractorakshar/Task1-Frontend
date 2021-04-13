@@ -1,3 +1,4 @@
+import {MatChipsModule} from '@angular/material/chips';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { ViewmoreComponent } from './viewmore/viewmore.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { EscalateComponent } from './escalate/escalate.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { EscalateComponent } from './escalate/escalate.component';
     ViewsComponent,
     PageNotFoundComponent,
     ViewmoreComponent,
-    EscalateComponent
+    EscalateComponent,
+    DashboardComponent
   ],
   imports: [
 
@@ -56,6 +59,8 @@ import { EscalateComponent } from './escalate/escalate.component';
     MatFormFieldModule,
     MatIconModule,
     MatPaginatorModule,
+    MatChipsModule
+
   ],
   entryComponents: [ViewmoreComponent],
   providers: [],

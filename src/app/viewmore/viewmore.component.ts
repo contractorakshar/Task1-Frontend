@@ -1,6 +1,9 @@
 import { Router } from '@angular/router';
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { HttpClient } from "@angular/common/http";
+import { environment } from 'src/environments/environment';
+
 @Component({
   selector: 'app-viewmore',
   templateUrl: './viewmore.component.html',
@@ -24,7 +27,7 @@ export class ViewmoreComponent implements OnInit {
   Allergies: string;
   Previous: string;
   constructor(public dailogref: MatDialogRef<ViewmoreComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any, private _route: Router) { }
+    @Inject(MAT_DIALOG_DATA) public data: any, private _route: Router, private _http: HttpClient) { }
 
   ngOnInit(): void {
     this.Subscription = this.data.Subscription;
@@ -48,9 +51,8 @@ export class ViewmoreComponent implements OnInit {
   onCancelClick() {
     this.dailogref.close();
   }
+
   onEscalate() {
-
-
 
     //console.log(Escalate);
     // if (Data.splice(this.data.Id - 1, 1)) {
@@ -59,15 +61,22 @@ export class ViewmoreComponent implements OnInit {
     //   localStorage.setItem('Escalate', JSON.stringify(Escalate));
     //   // console.log(Escalate);
 
-    let Data: any[] = JSON.parse(localStorage.getItem('Data'));
-    let Escalate: any[] = JSON.parse(localStorage.getItem('Escalate'));;
+    // let Data: any[] = JSON.parse(localStorage.getItem('Data'));
+    // let Escalate: any[] = JSON.parse(localStorage.getItem('Escalate'));;
 
-    Escalate.push(Data[this.data.Id - 1]);
-    if (Data.splice(this.data.Id - 1, 1)) {
-      //   console.log(Data);
-      localStorage.setItem('Escalate', JSON.stringify(Escalate));
-    }
+    // Escalate.push(Data[this.data.Id - 1]);
+    // if (Data.splice(this.data.Id - 1, 1)) {
+    //   //   console.log(Data);
+    //   localStorage.setItem('Escalate', JSON.stringify(Escalate));
+    // }
     // console.log(Escalate);
-    this.dailogref.close();
+    this._http.post(environment.url_esc, this.data).subscribe(() => {
+
+      this._http.delete(environment.url + this.data.id).subscribe(() => {
+        this.dailogref.close()
+        this._route.navigate(['nav/Escalate']);
+      });
+    });
   }
+
 }

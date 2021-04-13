@@ -1,3 +1,4 @@
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { EscalateComponent } from './escalate/escalate.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ViewsComponent } from './views/views.component';
@@ -10,6 +11,7 @@ const arr: Routes = [
   { path: '', component: LoginPageComponent },
   {
     path: 'nav', canActivate: [AuthguardService], component: NavBarComponent, children: [
+      { path: 'Stats', component: DashboardComponent },
       { path: 'Dashboard', component: ViewsComponent },
       { path: 'Escalate', component: EscalateComponent },
     ]

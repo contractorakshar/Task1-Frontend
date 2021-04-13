@@ -5,6 +5,11 @@
 export const environment = {
   production: false,
   ApiLink: 'https://api.npoint.io/46fc5ba9bc5eebc2b447/',
+  url: 'http://localhost:3000/Clinic_Data/',
+  url_esc: 'http://localhost:3000/Escalate/',
+  url_time: 'http://localhost:3000/time_spent/',
+  url_esctTime: 'http://localhost:3000/esc_time/',
+
 };
 
 /*

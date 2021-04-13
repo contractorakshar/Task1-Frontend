@@ -12,7 +12,7 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class NavBarComponent implements OnInit {
   LoginTime;
-  len;
+  //  len;
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
@@ -22,8 +22,8 @@ export class NavBarComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver, private _route: Router) { }
   ngOnInit() {
     this.LoginTime = localStorage.getItem('LoginTime');
-    let c: any[] = JSON.parse(localStorage.getItem('Escalate'));
-    this.len = c.length;
+    // let c: any[] = JSON.parse(localStorage.getItem('Escalate'));
+    // this.len = c.length;
   }
   Logout() {
     localStorage.removeItem('u_EmailId');

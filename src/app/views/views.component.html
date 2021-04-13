@@ -1,6 +1,3 @@
-<div class="Timer">
-  Time : {{timeLeft*1000|date:'HH:mm:ss':'UTC' }}
-</div>
 <!-- <table class="table table-striped">
   <thead>
     <tr>
@@ -54,7 +51,7 @@
     <ng-container matColumnDef="Time_Left">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Time Left </th>
       <td mat-cell *matCellDef="let row"
-        [ngClass]="{'red':row.Time_Left == '1 hour ago', 'green': row.Time_Left  !='1 hour ago' }"> {{row.Time_Left}}
+        [ngClass]="{'red':row.Time_Left <= '1 hour ago', 'green': row.Time_Left  !='1 hour ago' }"> {{row.Time_Left}}
       </td>
     </ng-container>
 

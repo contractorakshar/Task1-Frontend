@@ -1,0 +1,172 @@
+{
+  "Clinic_Data": [
+    {
+      "id": 1,
+      "Name": "Joe Bloggs",
+      "Country": "NY,USA",
+      "Time_Left": 0,
+      "Consult_Type": "Acne",
+      "Consultation_DateTime": "2021-04-12 09:30",
+      "gender": "Male",
+      "Age": "43",
+      "DOB": "1970-10-17",
+      "Skin_Type": "Dry",
+      "Secondary_Concern": "Wrikles",
+      "Patient_Report": "Post Inflammatory Pigmentation,Ice-Pick scarring",
+      "Medical_Condition": "None",
+      "Current_Medicines": "None",
+      "Allergies": "None",
+      "Previous": "None",
+      "Subscription": "New",
+      "Submitted": "2021-01-15 16:27",
+      "Last_Update": "2021-01-15 16:27",
+      "Email": "Abc@gmail.com"
+    },
+    {
+      "id": 4,
+      "Name": "Joe Bloggs",
+      "Country": "NY,USA",
+      "Time_Left": 0,
+      "Consult_Type": "Acne",
+      "Consultation_DateTime": "2021-04-11 11:00",
+      "gender": "Male",
+      "Age": "43",
+      "DOB": "1970-10-17",
+      "Skin_Type": "Dry",
+      "Secondary_Concern": "Wrikles",
+      "Patient_Report": "Post Inflammatory Pigmentation,Ice-Pick scarring",
+      "Medical_Condition": "None",
+      "Current_Medicines": "None",
+      "Allergies": "None",
+      "Previous": "None",
+      "Subscription": "New",
+      "Submitted": "2021-01-15 16:27",
+      "Last_Update": "2021-01-15 16:27",
+      "Email": "Abc@gmail.com"
+    }
+  ],
+  "Escalate": [
+    {
+      "id": 2,
+      "Name": "Joe Bloggs",
+      "Country": "NY,USA",
+      "Time_Left": 0,
+      "Consult_Type": "Acne",
+      "Consultation_DateTime": "2021-04-01 12:00",
+      "gender": "Male",
+      "Age": "43",
+      "DOB": "1970-10-17",
+      "Skin_Type": "Dry",
+      "Secondary_Concern": "Wrikles",
+      "Patient_Report": "Post Inflammatory Pigmentation,Ice-Pick scarring",
+      "Medical_Condition": "None",
+      "Current_Medicines": "None",
+      "Allergies": "None",
+      "Previous": "None",
+      "Subscription": "New",
+      "Submitted": "2021-01-15 16:27",
+      "Last_Update": "2021-01-15 16:27",
+      "Email": "Abc@gmail.com"
+    },
+    {
+      "id": 1,
+      "Name": "Joe Bloggs",
+      "Country": "NY,USA",
+      "Time_Left": "1 hour ago",
+      "Consult_Type": "Acne",
+      "Consultation_DateTime": "2021-04-02 10:00",
+      "gender": "Male",
+      "Age": "43",
+      "DOB": "1970-10-17",
+      "Skin_Type": "Dry",
+      "Secondary_Concern": "Wrikles",
+      "Patient_Report": "Post Inflammatory Pigmentation,Ice-Pick scarring",
+      "Medical_Condition": "None",
+      "Current_Medicines": "None",
+      "Allergies": "None",
+      "Previous": "None",
+      "Subscription": "New",
+      "Submitted": "2021-01-15 16:27",
+      "Last_Update": "2021-01-15 16:27",
+      "Email": "Abc@gmail.com"
+    },
+    {
+      "id": 3,
+      "Name": "Joe Bloggs",
+      "Country": "NY,USA",
+      "Time_Left": -9,
+      "Consult_Type": "Acne",
+      "Consultation_DateTime": "2021-04-12 13:00",
+      "gender": "Male",
+      "Age": "43",
+      "DOB": "1970-10-17",
+      "Skin_Type": "Dry",
+      "Secondary_Concern": "Wrikles",
+      "Patient_Report": "Post Inflammatory Pigmentation,Ice-Pick scarring",
+      "Medical_Condition": "None",
+      "Current_Medicines": "None",
+      "Allergies": "None",
+      "Previous": "None",
+      "Subscription": "New",
+      "Submitted": "2021-01-15 16:27",
+      "Last_Update": "2021-01-15 16:27",
+      "Email": "Abc@gmail.com"
+    },
+    {
+      "id": 5,
+      "Name": "Joe Bloggs",
+      "Country": "NY,USA",
+      "Time_Left": 0,
+      "Consult_Type": "Acne",
+      "Consultation_DateTime": "2021-04-11 10:53",
+      "gender": "Male",
+      "Age": "43",
+      "DOB": "1970-10-17",
+      "Skin_Type": "Dry",
+      "Secondary_Concern": "Wrikles",
+      "Patient_Report": "Post Inflammatory Pigmentation,Ice-Pick scarring",
+      "Medical_Condition": "None",
+      "Current_Medicines": "None",
+      "Allergies": "None",
+      "Previous": "None",
+      "Subscription": "New",
+      "Submitted": "2021-01-15 16:27",
+      "Last_Update": "2021-01-15 16:27",
+      "Email": "Abc@gmail.com"
+    }
+  ],
+  "time_spent": [
+    {
+      "date": "04/12/2021",
+      "seconds": 463,
+      "id": 1
+    },
+    {
+      "date": "04/11/2021",
+      "seconds": 215,
+      "id": 2
+    },
+    {
+      "date": "04/10/2021",
+      "seconds": 300,
+      "id": 3
+    }
+  ],
+  "esc_time": [
+    {
+      "date": "04/12/2021",
+      "seconds": 135,
+      "id": 1
+    },
+    {
+      "date": "04/11/2021",
+      "seconds": 215,
+      "id": 2
+    },
+    {
+      "date": "04/10/2021",
+      "seconds": 300,
+      "id": 3
+    }
+  ]
+}
